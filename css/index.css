@@ -157,6 +157,7 @@ html body {
   height: 100px;
   width: 90%;
   margin: auto;
+  margin-top: 10px;
 }
 @media (max-width: 800px) {
   .wrapper .nav-bar {
@@ -169,9 +170,12 @@ html body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: #35FF69;
+  border-radius: 20px 0 0 20px;
 }
 @media (max-width: 800px) {
   .wrapper .nav-bar .title-bar {
+    border-radius: 0 0 20px 20px;
     width: 100%;
     order: 2;
   }
@@ -179,18 +183,21 @@ html body {
 .wrapper .nav-bar .title-bar h1 {
   margin-top: 10px;
   font-size: 3rem;
+  color: #494947;
 }
 .wrapper .nav-bar nav {
-  background: #576490;
+  background: #494947;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100px;
   width: 50%;
+  border-radius: 0 20px 20px 0;
 }
 @media (max-width: 800px) {
   .wrapper .nav-bar nav {
+    border-radius: 20px 20px 0 0;
     width: 100%;
     order: 1;
   }
@@ -199,7 +206,11 @@ html body {
   margin-top: 10px;
   font-size: 2.5rem;
   text-decoration: none;
-  color: #D1D2F9;
+  color: white;
+  transition: color 1s;
+}
+.wrapper .nav-bar nav a:hover {
+  color: white;
 }
 .wrapper .top-content {
   margin: auto;
@@ -230,8 +241,12 @@ html body {
   margin-top: 15px;
 }
 .wrapper .top-content header .hdr-rt img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.wrapper .top-content header .hdr-rt img:hover {
+  filter: invert(100%);
 }
 .wrapper .top-content header .hdr-lft {
   margin: auto;
@@ -252,6 +267,7 @@ html body {
   display: flex;
   flex-direction: row;
   height: 400px;
+  border-radius: 20px;
 }
 @media (max-width: 500px) {
   .wrapper .middle-content {
@@ -292,7 +308,6 @@ html body {
   font-size: 1.5rem;
 }
 .wrapper .contact {
-  margin-top: 10px;
   width: 90%;
   margin: auto;
   text-align: center;
