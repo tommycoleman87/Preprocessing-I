@@ -77,17 +77,19 @@ html {
 }
 
 .wrapper {
+	margin: auto;
 	width: 100vw;
 	background: white;
 	height: 100vh;
+	max-width: 1200px;
 //Nav Bar
 	.nav-bar {
 		.flex-row();
-		justify-content: space-around;
 		height: 100px;
-		width: 100%;
+		width: 90%;
+		margin: auto;
 
-		@media(max-width: 500px){
+		@media(max-width: 800px){
 			.flex-column();
 		}
 
@@ -95,8 +97,9 @@ html {
 			width: 50%;
 			.flex-column();
 			text-align: center;
-			@media(max-width: 500px) {
+			@media(max-width: 800px) {
 				width: 100%;
+				order: 2;
 			}
 
 			h1 {
@@ -109,12 +112,15 @@ html {
 		nav {
 			background: #576490;
 			.flex-row();
+			flex-wrap: wrap;
 			justify-content: space-around;
 			height: 100px;
 			width: 50%;
-			@media(max-width: 500px) {
+			@media(max-width: 800px) {
 				width: 100%;
+				order: 1;
 			}
+			
 			a {	
 				margin-top: @margin-top;
 				font-size: @h2;
@@ -138,6 +144,8 @@ html {
 			h2 {
 				font-size: @h2;
 				text-align: center;
+				font-family: 'Lobster', cursive;
+				margin-bottom: 10px;
 			}
 
 			.hdr-rt {
@@ -187,6 +195,7 @@ html {
 			}
 
 			h2 {
+				font-family: 'Lobster', cursive;
 				font-size: @h2;
 				text-align: center;
 				margin-bottom: 30px;
@@ -197,6 +206,7 @@ html {
 				li {
 					margin-bottom: 20px;
 					h3 {
+						font-family: 'Baloo Da', cursive;
 						font-size: @h3;
 					}
 
@@ -209,6 +219,8 @@ html {
 			}
 		}
 	}
+
+	//Footer
 
 	.contact {
 		margin-top: 10px;

@@ -145,18 +145,20 @@ html body {
   height: 100%;
 }
 .wrapper {
+  margin: auto;
   width: 100vw;
   background: white;
   height: 100vh;
+  max-width: 1200px;
 }
 .wrapper .nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   height: 100px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapper .nav-bar {
     display: flex;
     flex-direction: column;
@@ -168,9 +170,10 @@ html body {
   flex-direction: column;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapper .nav-bar .title-bar {
     width: 100%;
+    order: 2;
   }
 }
 .wrapper .nav-bar .title-bar h1 {
@@ -181,13 +184,15 @@ html body {
   background: #576490;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   height: 100px;
   width: 50%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .wrapper .nav-bar nav {
     width: 100%;
+    order: 1;
   }
 }
 .wrapper .nav-bar nav a {
@@ -214,6 +219,8 @@ html body {
 .wrapper .top-content header h2 {
   font-size: 2.5rem;
   text-align: center;
+  font-family: 'Lobster', cursive;
+  margin-bottom: 10px;
 }
 .wrapper .top-content header .hdr-rt {
   width: 100%;
@@ -265,6 +272,7 @@ html body {
   }
 }
 .wrapper .middle-content section h2 {
+  font-family: 'Lobster', cursive;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 30px;
@@ -276,6 +284,7 @@ html body {
   margin-bottom: 20px;
 }
 .wrapper .middle-content section ul li h3 {
+  font-family: 'Baloo Da', cursive;
   font-size: 2rem;
 }
 .wrapper .middle-content section ul li p {
