@@ -1,1 +1,239 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  height: 100%;
+}
+.wrapper {
+  width: 100vw;
+  background: #A3BCF9;
+  height: 100vh;
+}
+.wrapper .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+}
+.wrapper .nav-bar .title-bar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.wrapper .nav-bar .title-bar h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+.wrapper .nav-bar nav {
+  background: #576490;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  width: 50%;
+}
+.wrapper .nav-bar nav a {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #D1D2F9;
+}
+.wrapper .top-content {
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+  height: 150px;
+}
+.wrapper .top-content header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .top-content header h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.wrapper .top-content header .hdr-rt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 25%;
+}
+.wrapper .top-content header .hdr-rt img {
+  width: 150px;
+  height: 150px;
+}
+.wrapper .top-content header .hdr-lft {
+  font-size: 1.5rem;
+  width: 75%;
+}
+.wrapper .middle-content {
+  background: #C9CAD9;
+  margin-top: 100px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+}
+.wrapper .middle-content section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.wrapper .middle-content section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wrapper .middle-content section ul li {
+  margin-bottom: 20px;
+}
+.wrapper .middle-content section ul li h3 {
+  font-size: 2rem;
+}
+.wrapper .middle-content section ul li p {
+  font-size: 1.5rem;
+}
