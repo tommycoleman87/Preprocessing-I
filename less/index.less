@@ -78,7 +78,7 @@ html {
 
 .wrapper {
 	width: 100vw;
-	background: #A3BCF9;
+	background: white;
 	height: 100vh;
 //Nav Bar
 	.nav-bar {
@@ -87,10 +87,17 @@ html {
 		height: 100px;
 		width: 100%;
 
+		@media(max-width: 500px){
+			.flex-column();
+		}
+
 		.title-bar {
 			width: 50%;
 			.flex-column();
 			text-align: center;
+			@media(max-width: 500px) {
+				width: 100%;
+			}
 
 			h1 {
 				margin-top: @margin-top;
@@ -105,6 +112,9 @@ html {
 			justify-content: space-around;
 			height: 100px;
 			width: 50%;
+			@media(max-width: 500px) {
+				width: 100%;
+			}
 			a {	
 				margin-top: @margin-top;
 				font-size: @h2;
@@ -118,7 +128,10 @@ html {
 		margin: auto;
 		width: 90%;
 		margin-top: 30px;
-		height: 150px;
+		margin-bottom: 30px;
+		height: 350px;
+		.flex-column();
+		justify-content: center;
 		header {
 			.flex-column();
 			justify-content: center;
@@ -128,9 +141,11 @@ html {
 			}
 
 			.hdr-rt {
+				width: 100%;
 				.flex-row();
-				justify-content: space-around;
-				width: 25%;
+				justify-content: center;
+				margin-top: 15px;
+	
 				img {
 					width: 150px;
 					height: 150px;
@@ -138,8 +153,13 @@ html {
 			}
 			
 			.hdr-lft {
+				margin: auto;
 				font-size: @p;
-				width: 75%;
+				width: 50%;
+				text-align: center;
+				@media(max-width: 500px){
+					width: 100%;
+				}
 			}
 
 		}
@@ -152,11 +172,19 @@ html {
 		width: 90%;
 		margin: auto;
 		.flex-row();
-		height: 700px;
+		height: 400px;
+		@media(max-width: 500px) {
+			.flex-column();
+			height: 800px;
+			justify-content: space-evenly;
+		}
 
 		section {
 			.flex-column();
 			width: 50%;
+			@media(max-width: 500px) {
+				width: 100%;
+			}
 
 			h2 {
 				font-size: @h2;
@@ -165,19 +193,30 @@ html {
 			}
 
 			ul {
-
+				padding-left: 15px;
 				li {
 					margin-bottom: 20px;
 					h3 {
 						font-size: @h3;
 					}
 
-					p {
+					p {	
+						margin-top: 5px;
 						font-size: @p;
 					}
 					
 				}
 			}
+		}
+	}
+
+	.contact {
+		margin-top: 10px;
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		p {
+			font-size: @p;
 		}
 	}
 
