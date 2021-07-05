@@ -1,1 +1,317 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  height: 100%;
+}
+.wrapper {
+  margin: auto;
+  width: 100vw;
+  background: white;
+  height: 100vh;
+  max-width: 1200px;
+}
+.wrapper .nav-bar {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .wrapper .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.wrapper .nav-bar .title-bar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #35FF69;
+  border-radius: 20px 0 0 20px;
+}
+@media (max-width: 800px) {
+  .wrapper .nav-bar .title-bar {
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    order: 2;
+  }
+}
+.wrapper .nav-bar .title-bar h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+  color: #494947;
+}
+.wrapper .nav-bar nav {
+  background: #494947;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100px;
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+}
+@media (max-width: 800px) {
+  .wrapper .nav-bar nav {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    order: 1;
+  }
+}
+.wrapper .nav-bar nav a {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+}
+.wrapper .nav-bar nav a:hover {
+  color: white;
+}
+.wrapper .top-content {
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .top-content header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .top-content header h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin-bottom: 10px;
+}
+.wrapper .top-content header .hdr-rt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+.wrapper .top-content header .hdr-rt img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.wrapper .top-content header .hdr-rt img:hover {
+  filter: invert(100%);
+}
+.wrapper .top-content header .hdr-lft {
+  margin: auto;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .wrapper .top-content header .hdr-lft {
+    width: 100%;
+  }
+}
+.wrapper .middle-content {
+  background: #C9CAD9;
+  margin-top: 100px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .wrapper .middle-content {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: space-evenly;
+  }
+}
+.wrapper .middle-content section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .wrapper .middle-content section {
+    width: 100%;
+  }
+}
+.wrapper .middle-content section h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wrapper .middle-content section ul {
+  padding-left: 15px;
+}
+.wrapper .middle-content section ul li {
+  margin-bottom: 20px;
+}
+.wrapper .middle-content section ul li h3 {
+  font-family: 'Baloo Da', cursive;
+  font-size: 2rem;
+}
+.wrapper .middle-content section ul li p {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.wrapper .contact {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.wrapper .contact p {
+  font-size: 1.5rem;
+}
